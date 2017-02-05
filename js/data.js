@@ -24,14 +24,14 @@ const data = {
         ]
     },
     jumbo: {
-        img: `../img/desk4.jpg`
+        img: `img/desk4.jpg`
     },
     about: {
         img: ``,
         aboutText: `This is the about section.`
     },
     portfolio: {
-        backgroundImg: `../img/zipper.png`,
+        backgroundImg: `img/zipper.png`,
         projects: [
         {
             title:          `guestlist`,
