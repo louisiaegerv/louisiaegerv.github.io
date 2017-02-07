@@ -33,7 +33,7 @@ header {
   margin: 0;
   transition: all 0.3s ease;
   top: 0; }
-  header li {
+  header li, header p {
     transition: all 0.3s ease;
     color: #2c98f6; }
   header .title li {
@@ -44,7 +44,8 @@ header {
     header .title li:hover {
       color: white; }
   header .headerList {
-    float: right; }
+    float: right;
+    padding: 0; }
     header .headerList li {
       display: inline-block;
       padding: 30px 20px;
@@ -62,6 +63,13 @@ header {
       background: white;
       color: #2c98f6;
       text-shadow: none; }
+  header .navButton {
+    float: right;
+    display: none;
+    margin-top: 20px;
+    font-size: 2em;
+    padding-right: 10px;
+    cursor: pointer; }
 
 .nav-up {
   top: -100px; }
@@ -73,34 +81,39 @@ header {
   position: relative;
   text-align: center;
   transition: all 0.3s ease; }
-  #jumbo h1 {
-    position: relative;
-    padding-top: 240px;
-    font-size: 5em;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
-    transition: all 0.3s ease; }
-  #jumbo a {
-    position: relative;
-    top: 80px;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
-    padding: 15px 32px;
-    border: 1px solid #2c98f6;
-    border-bottom: 4px solid #2c98f6;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    font-size: 1em;
-    transition: all 0.3s ease; }
-    #jumbo a:hover {
-      background: #2c98f6;
-      padding: 15px 64px;
-      color: black;
-      text-shadow: none; }
+  #jumbo .jumboContentContainer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    right: 5%; }
+    #jumbo .jumboContentContainer h1 {
+      position: relative;
+      font-size: 5em;
+      width: 100%;
+      height: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
+      transition: all 0.3s ease; }
+    #jumbo .jumboContentContainer a {
+      position: relative;
+      top: 80px;
+      text-transform: uppercase;
+      color: white;
+      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+      padding: 15px 32px;
+      border: 1px solid #2c98f6;
+      border-bottom: 4px solid #2c98f6;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-size: 1em;
+      transition: all 0.3s ease; }
+      #jumbo .jumboContentContainer a:hover {
+        background: #2c98f6;
+        padding: 15px 64px;
+        color: black;
+        text-shadow: none; }
 
 .about {
   background: #2c98f6;
@@ -156,14 +169,14 @@ header {
   color: #2A3A3F;
   text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 40px 0;
   font-size: 1em; }
   .contact #email,
   .contact #name,
   .contact #message,
   .contact button {
     transition: all 0.3s ease;
-    border: 4px solid transparent;
+    border: 2px solid transparent;
     border-radius: 10px;
     width: 100%;
     padding: 15px; }
@@ -174,8 +187,9 @@ header {
     .contact #message:focus,
     .contact button:active,
     .contact button:focus {
-      border: 4px solid rgba(44, 152, 246, 0.8);
-      outline: none; }
+      border: 2px solid rgba(44, 152, 246, 0.8);
+      outline: none;
+      box-shadow: none; }
   .contact #email,
   .contact #name,
   .contact #message {
@@ -210,6 +224,17 @@ header {
         filter: brightness(0.1); }
 
 @media screen and (max-width: 768px) {
+  header .navButton {
+    display: inline-block; }
+  header .headerList li {
+    display: none;
+    padding: 10px; }
+  header .headerList.active {
+    float: inherit; }
+    header .headerList.active li {
+      display: block;
+      float: left;
+      clear: both; }
   .portfolio .projTitleRow h1 {
     font-size: 3em; }
   .portfolio .projectsRow .projContainer {
@@ -231,7 +256,7 @@ header {
     padding: 0; } }
 
 @media screen and (max-width: 500px) {
-  #jumbo h1 {
+  #jumbo .jumboContentContainer h1 {
     font-size: 2em; }
-  #jumbo a {
+  #jumbo .jumboContentContainer a {
     font-size: .8em; } }

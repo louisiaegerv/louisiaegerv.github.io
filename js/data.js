@@ -24,6 +24,9 @@ const data = {
         ]
     },
     jumbo: {
+        text: `Hi, I'm Louis. I design & build websites.`,
+        buttonText: `Yes, I'm available for hire.`,
+        buttonLink: `#contact`,
         img: `img/desk4.jpg`
     },
     about: {
