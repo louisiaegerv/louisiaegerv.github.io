@@ -64,6 +64,12 @@
     jumboContentContainer.appendChild(jumboButton);
     jumboSection.appendChild(jumboContentContainer);
     
+    const scrollDown = document.createElement('a');
+    scrollDown.href = jumbo.scrollDownLink;
+    scrollDown.classList.add('scrollDown');
+    scrollDown.innerHTML = '<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>';
+    jumboSection.appendChild(scrollDown);
+    
     
     /* About section */
     const aboutImg = document.createElement('img');

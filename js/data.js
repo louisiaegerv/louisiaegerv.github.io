@@ -2,12 +2,12 @@ const data = {
     nav: {
         title: {
             text: `Louis Iaeger V`,
-            link: `#`
+            link: `#app`
         },
         navLinks: [
             {
                 name:   `Home`,
-                url:    `#`
+                url:    `#app`
             }, 
             {
                 name:   `About`,
@@ -27,6 +27,7 @@ const data = {
         text: `Hi, I'm Louis. I design & build websites.`,
         buttonText: `Yes, I'm available for hire.`,
         buttonLink: `#contact`,
+        scrollDownLink: '#about',
         img: `img/desk4.jpg`
     },
     about: {
