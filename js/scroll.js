@@ -9,6 +9,7 @@ $(document).ready(function () {
         didScroll = true;
     });
     setInterval(function () {
+        let clickNav = localStorage.getItem('clickNav');
         if (didScroll) {
             hasScrolled();
             didScroll = false;
@@ -17,6 +18,7 @@ $(document).ready(function () {
 
     function hasScrolled() {
         const st = $(this).scrollTop();
+        localStorage.setItem('clickNav', 'false');
         setHeaderBG();
         // Make sure they scroll more than delta
         if (Math.abs(lastScrollTop - st) <= delta) return;

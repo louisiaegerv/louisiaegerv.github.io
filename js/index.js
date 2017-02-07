@@ -26,15 +26,20 @@
         return a;
     };
     
-    /* Nav section */
+    /* Header section */
     const title = createLinkLI(nav.title.text, nav.title.link);
     title.classList.add('title');
     headerSection.firstElementChild.appendChild(title);
-    
     const headerList = document.querySelector(".headerList");
     const headerLinks = nav.navLinks;
     for (let i = 0; i < headerLinks.length; i++) {
-        headerList.appendChild(createLinkLI(headerLinks[i].name, headerLinks[i].url));
+        const li = createLinkLI(headerLinks[i].name, headerLinks[i].url);
+        li.addEventListener('click', () => {
+           headerSection.classList.add('nav-down');
+            localStorage.setItem('clickNav', 'true');
+            console.log(`clickNav: ${localStorage.getItem('clickNav')}`);
+        });
+        headerList.appendChild(li);
     };
     
     /* Jumbotron section */
@@ -42,9 +47,12 @@
     jumboSection.firstElementChild.textContent = `Hi, I'm Louis. I design & build websites.`;
     
     /* About section */
+    const aboutImg = document.createElement('img');
+    aboutImg.src = about.img;
+    aboutSection.firstElementChild.firstElementChild.appendChild(aboutImg);
     const aboutTxt = document.createElement('p');
     aboutTxt.textContent = about.aboutText;
-    aboutSection.appendChild(aboutTxt);
+    aboutSection.firstElementChild.lastElementChild.appendChild(aboutTxt);
         
     
     /* Portfolio Section */
@@ -71,8 +79,27 @@
         portfolioSection.firstElementChild.children[1].appendChild(projContainer);
     });
     /* Contact Section */
-    contactSection.textContent = 'Contact me';
+    
+    
     /* Footer Section */
     const year = new Date().getFullYear();
-    footerSection.textContent = `Handmade by me © ${year}.`;
+    let footerCopyright = document.createElement('p');
+    footerCopyright.textContent = `Handmade by me © ${year}.`;
+    footerSection.firstElementChild.appendChild(footerCopyright);
+    social.forEach(socialAccount => {
+        const socialLink = document.createElement('a');
+        
+        if (socialAccount.fontAwesome === true) {
+            const faIcon = '<i class="fa fa-' + socialAccount.name + ' fa-2x" aria-hidden="true"></i>';
+            socialLink.innerHTML = faIcon;
+        } else if (socialAccount.img !== '') {
+            const iconImg = '<img src="' + socialAccount.img + '">';
+            socialLink.innerHTML = iconImg;
+        } else {
+            socialLink.textContent = socialAccount.name;
+        }
+        socialLink.href = socialAccount.fullLink;
+        socialLink.target = '_blank';
+        footerSection.lastElementChild.appendChild(socialLink);
+    });
 })();

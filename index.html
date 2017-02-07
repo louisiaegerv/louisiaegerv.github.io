@@ -7,24 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Louis Iaeger's Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat|Lobster" rel="stylesheet">
     <link rel="stylesheet" href="style/style2.css"> </head>
 
 <body>
     <div id="app">
-       
         <header class="headerTransparent">
-            <div class="container"> 
+            <div class="container">
                 <ul class="headerList"></ul>
             </div>
-        </header>   
-            
+        </header>
         <div id="jumbo">
-            <h1></h1>
-            <a href="#contact">Yes, I'm available for hire.</a>
+            <h1></h1> <a href="#contact">Yes, I'm available for hire.</a> </div>
+        <div id="about" class="about">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 imgContainer"></div>
+                <div class="col-xs-12 col-sm-6 aboutText"></div>
+            </div>
         </div>
-        <div id="about"     class="about"></div>
-        <div id="projects"  class="portfolio">
+        <div id="projects" class="portfolio">
             <div class="container">
                 <div class="row projTitleRow">
                     <div class="col-xs-12">
@@ -34,11 +36,28 @@
                 <div class="row projectsRow"></div>
             </div>
         </div>
-        <div id="contact"   class="contact"></div>
-        <div id="footer"    class="footer"></div>
+        <div id="contact" class="contact">
+            <div class="container">
+                <h1>Contact me</h1>
+                <form action="">
+                    <div class="col-sm-6">
+                        <div id="nameDiv" class="col-xs-12 col-sm-12">
+                            <input type="text" name="" id="name" placeholder="Name" required> </div>
+                        <div id="emailDiv" class="col-xs-12 col-sm-12">
+                            <input type="email" name="" id="email" placeholder="Email" required> </div>
+                    </div>
+                    <div id="messageDiv" class="col-xs-12 col-sm-6">
+                        <textarea name="" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit"><i class="fa fa-envelope" aria-hidden="true"></i> Send</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer" class="footer">
+           <div class="copyright"></div>
+            <div class="socialIcons"></div>
+        </div>
     </div>
-    
-    
     <!-- JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/data.js"></script>

@@ -27,8 +27,8 @@ const data = {
         img: `img/desk4.jpg`
     },
     about: {
-        img: ``,
-        aboutText: `This is the about section.`
+        img: `img/me.jpg`,
+        aboutText: `Passionate programmer pursuing a career path in web/app development and mixed reality technologies. I bring a strong background in UX and attention to detail that will increase engagement between your company and its target audience.`
     },
     portfolio: {
         backgroundImg: `img/zipper.png`,
@@ -120,34 +120,39 @@ const data = {
     },
     social: [
         {
-            name: 'Twitter',
+            name: 'twitter',
             shortlink: 'twitter.com/theCodeslayer/',
             fullLink: 'https://twitter.com/theCodeslayer/',
-            img: ''
+            img: '',
+            fontAwesome: true
         },
         {
-            name: 'GitHub',
+            name: 'github',
             shortlink: 'github.com/louisiaegerv/',
             fullLink: 'https://github.com/louisiaegerv/',
-            img: ''
+            img: '',
+            fontAwesome: true
         },
         {
-            name:       'LinkedIn',
+            name:       'linkedin',
             shortlink:  'linkedin.com/in/louislinkedin',
             fullLink:   'https://www.linkedin.com/in/louislinkedin',
-            img:        ''
+            img:        '',
+            fontAwesome: true
         },
         {
             name:       'Codecademy',
             shortlink:  'codecademy.com/megapandalord',
             fullLink:   'https://www.codecademy.com/megapandalord',
-            img:        'https://louisiaegerv.github.io/resume/assets/img/cc2w.png'
+            img:        'https://louisiaegerv.github.io/resume/assets/img/cc2w.png',
+            fontAwesome: false
         },
         {
             name:       'Team Treehouse',
             shortlink:  'teamtreehouse.com/louisiaeger',
             fullLink:   'https://teamtreehouse.com/louisiaeger',
-            img:        ''
+            img:        'https://raw.githubusercontent.com/louisiaegerv/Project-Images/master/treehouse.png',
+            fontAwesome: false
         }
     ]
 };
