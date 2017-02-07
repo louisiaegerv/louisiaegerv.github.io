@@ -231,6 +231,9 @@ header {
     padding: 0; } }
 
 @media screen and (max-width: 500px) {
+  header .headerList {
+     display: none;
+  }
   #jumbo h1 {
     font-size: 2em; }
   #jumbo a {
