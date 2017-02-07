@@ -28,10 +28,12 @@
     const title = createLinkLI(nav.title.text, nav.title.link);
     title.classList.add('title');
     headerSection.firstElementChild.appendChild(title);
+    
     const navButton = document.createElement('p');
     navButton.innerHTML = `&#9776;`;
     navButton.classList.add('navButton');
     headerSection.firstElementChild.appendChild(navButton);
+    
     const headerList = document.createElement('ul');
     headerList.classList.add("headerList");
     navButton.addEventListener('click', () => {
@@ -42,7 +44,7 @@
         const li = createLinkLI(link.name, link.url);
         li.addEventListener('click', () => {
             headerList.classList.toggle('active');
-        })
+        });
         headerList.appendChild(li);
     });
     headerSection.firstElementChild.appendChild(headerList);
