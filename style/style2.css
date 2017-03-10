@@ -81,7 +81,8 @@ header {
   background-size: cover;
   position: relative;
   text-align: center;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+	background-image: url('../desk-sm.jpg'); }
   #jumbo .jumboContentContainer {
     position: absolute;
     top: 45%;
@@ -273,6 +274,9 @@ header {
     padding: 0; } }
 
 @media screen and (max-width: 500px) {
+	#jumbo {
+		background-position: right;
+	}
   #jumbo .jumboContentContainer h1 {
     font-size: 2em; }
   #jumbo .jumboContentContainer a {
