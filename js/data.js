@@ -38,6 +38,15 @@ const data = {
         backgroundImg: `img/zipper.png`,
         projects: [
         {
+            title:          `Breakout`,
+            description:    `reakout game made w/PhaserJS Framework`,
+            img:            `https://github.com/louisiaegerv/Project-Images/blob/master/breakout.png?raw=true`,
+            link:           `https://louisiaegerv.github.io/breakout/`,
+            tags:           [
+                `JavaScript`, `Game Dev`
+            ]
+        },
+        {
             title:          `guestlist`,
             description:    `Manage your party's RSVP's with this responsive web app made with JavaScript!`,
             img:            `https://github.com/louisiaegerv/Project-Images/raw/master/GuestListApp.jpg?raw=true`,
