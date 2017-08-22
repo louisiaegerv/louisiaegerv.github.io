@@ -11,7 +11,7 @@
     const nav = data.nav;
     const jumbo = data.jumbo;
     const about = data.about;
-    const portfolio = data.portfolio;
+    const portfolio = data.portfolio2;
     const contact = data.contact;
     const social = data.social;
     /* Functions */
@@ -23,17 +23,17 @@
         a.appendChild(li);
         return a;
     };
-    
+
     /* Header section */
     const title = createLinkLI(nav.title.text, nav.title.link);
     title.classList.add('title');
     headerSection.firstElementChild.appendChild(title);
-    
+
     const navButton = document.createElement('p');
     navButton.innerHTML = `&#9776;`;
     navButton.classList.add('navButton');
     headerSection.firstElementChild.appendChild(navButton);
-    
+
     const headerList = document.createElement('ul');
     headerList.classList.add("headerList");
     navButton.addEventListener('click', () => {
@@ -48,9 +48,9 @@
         headerList.appendChild(li);
     });
     headerSection.firstElementChild.appendChild(headerList);
-    
-    
-    
+
+
+
     /* Jumbotron section */
     jumboSection.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, .8), rgba(255, 255, 255, .4)), url(` + data.jumbo.img + `)`;
     const jumboContentContainer = document.createElement('div');
@@ -63,14 +63,14 @@
     jumboButton.href = jumbo.buttonLink;
     jumboContentContainer.appendChild(jumboButton);
     jumboSection.appendChild(jumboContentContainer);
-    
+
     const scrollDown = document.createElement('a');
     scrollDown.href = jumbo.scrollDownLink;
     scrollDown.classList.add('scrollDown');
     scrollDown.innerHTML = '<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>';
     jumboSection.appendChild(scrollDown);
-    
-    
+
+
     /* About section */
     const aboutImg = document.createElement('img');
     aboutImg.src = about.img;
@@ -78,7 +78,7 @@
     const aboutTxt = document.createElement('p');
     aboutTxt.textContent = about.aboutText;
     aboutSection.firstElementChild.lastElementChild.appendChild(aboutTxt);
-    
+
     /* Portfolio Section */
     portfolioSection.style.background = `url(` + portfolio.backgroundImg + `)  center center fixed`;
     portfolio.projects.forEach(project => {

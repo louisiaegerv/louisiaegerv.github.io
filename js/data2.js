@@ -34,7 +34,7 @@ const data = {
         img: `img/me.jpg`,
         aboutText: `Passionate programmer pursuing a career path in web/app development and mixed reality technologies. I bring a strong background in UX and attention to detail that will increase engagement between your company and its target audience.`
     },
-    portfolio: {
+    portfolio2: {
         backgroundImg: `img/zipper.png`,
         projects: [
         {
