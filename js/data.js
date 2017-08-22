@@ -39,11 +39,20 @@ const data = {
         projects: [
         {
             title:          `Breakout`,
-            description:    `reakout game made w/PhaserJS Framework`,
+            description:    `Breakout arcade game made w/PhaserJS Framework`,
             img:            `https://github.com/louisiaegerv/Project-Images/blob/master/breakout.png?raw=true`,
             link:           `https://louisiaegerv.github.io/breakout/`,
             tags:           [
                 `JavaScript`, `Game Dev`
+            ]
+        },
+        {
+            title:          `LouTube`,
+            description:    `reakout game made w/PhaserJS Framework`,
+            img:            `https://github.com/louisiaegerv/Project-Images/blob/master/loutube-wide.png?raw=true`,
+            link:           `https://www.youtube.com/watch?v=nr0FQeXYmws&feature=youtu.be`,
+            tags:           [
+                `JavaScript`, `React`
             ]
         },
         {
