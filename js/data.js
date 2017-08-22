@@ -48,7 +48,7 @@ const data = {
         },
         {
             title:          `LouTube`,
-            description:    `reakout game made w/PhaserJS Framework`,
+            description:    `Simple YouTube Clone made with React`,
             img:            `https://github.com/louisiaegerv/Project-Images/blob/master/loutube-wide.png?raw=true`,
             link:           `https://www.youtube.com/watch?v=nr0FQeXYmws&feature=youtu.be`,
             tags:           [
