@@ -65,15 +65,6 @@ const data = {
             ]
         },
         {
-            title:          `compass`,
-            description:    `A responsive demo website with Google Maps API, Bootstrap, and jQuery UI.`,
-            img:            `https://github.com/louisiaegerv/Project-Images/raw/master/compassDesktop.png`,
-            link:           `https://louisiaegerv.github.io/compass`,
-            tags:           [
-                `JavaScript`, `APIs`, `jQuery`
-            ]
-        },
-        {
             title:          `stocks-nodejs`,
             description:    `Get any stocks current NASDAQ price with this NodeJS app.`,
             img:            `https://github.com/louisiaegerv/Project-Images/blob/master/stock2.png?raw=true`,
