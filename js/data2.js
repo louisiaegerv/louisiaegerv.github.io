@@ -156,7 +156,7 @@ const data = {
         {
             name:       'Codecademy',
             shortlink:  'codecademy.com/megapandalord',
-            fullLink:   'https://www.codecademy.com/megapandalord',
+            fullLink:   'https://www.codecademy.com/profiles/megapandalord',
             img:        'https://louisiaegerv.github.io/resume/assets/img/cc2w.png',
             fontAwesome: false
         },
