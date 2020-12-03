@@ -120,7 +120,7 @@ const data = {
         },
         {
             title:          `noteboard`,
-            description:    `For all those genius ideas you keep forgetting.`,
+            description:    `For all those genius ideas you keep forgetting. `,
             img:            `https://raw.githubusercontent.com/louisiaegerv/Project-Images/master/noteboard.png`,
             link:           `https://louisiaegerv.github.io/noteboard`,
             tags:           [
