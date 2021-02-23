@@ -37,7 +37,16 @@ const data = {
     portfolio2: {
         backgroundImg: `img/zipper.png`,
         projects: [
-        {
+            {
+                title:          `Meme Maker`,
+                description:    `Meme creator made w/React JS and create-react-app`,
+                img:            `https://github.com/louisiaegerv/Project-Images/blob/master/meme-maker-cover-img-portfolio2.png?raw=true`,
+                link:           `https://meme-generator-13660.web.app/`,
+                tags:           [
+                    `JavaScript`, `React    `
+                ]
+            },
+            {
             title:          `Breakout`,
             description:    `Breakout arcade game made w/PhaserJS Framework`,
             img:            `https://github.com/louisiaegerv/Project-Images/blob/master/breakout.png?raw=true`,
