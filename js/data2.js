@@ -24,7 +24,7 @@ const data = {
     ],
   },
   jumbo: {
-    text: `Hi, I'm Louis. I design & build websites.`,
+    text: `Hi, I'm Louis. I design & build things with code.`,
     buttonText: `Yes, I'm available for hire.`,
     buttonLink: `#contact`,
     scrollDownLink: '#about',
