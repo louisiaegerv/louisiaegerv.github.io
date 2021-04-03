@@ -5,24 +5,29 @@ ul,
 li,
 p {
   margin: 0;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+}
 
 li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 a {
   text-decoration: none !important;
-  color: black; }
+  color: black;
+}
 
 #jumbo,
 .portfolio {
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 #about,
 #portfolio,
 #contact,
 #footer {
-  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+}
 
 header {
   position: fixed;
@@ -32,48 +37,60 @@ header {
   z-index: 9999;
   margin: 0;
   transition: all 0.3s ease;
-  top: 0; }
-  header li,
-  header p {
-    transition: all 0.3s ease;
-    color: #2c98f6; }
-  header .title li {
-    font-size: 3em;
-    padding: 10px 0;
-    float: left;
-    font-family: 'Lobster'; }
-    header .title li:hover {
-      color: white; }
-  header .headerList {
-    float: right;
-    padding: 0; }
-    header .headerList li {
-      display: inline-block;
-      padding: 30px 20px;
-      text-shadow: none; }
-      header .headerList li:hover {
-        background: #2c98f6;
-        color: white;
-        text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6); }
-  header.headerColored {
-    background: #2c98f6; }
-    header.headerColored * {
-      color: white;
-      text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6); }
-    header.headerColored .headerList li:hover {
-      background: white;
-      color: #2c98f6;
-      text-shadow: none; }
-  header .navButton {
-    float: right;
-    display: none;
-    margin-top: 20px;
-    font-size: 2em;
-    padding-right: 10px;
-    cursor: pointer; }
+  top: 0;
+}
+header li,
+header p {
+  transition: all 0.3s ease;
+  color: #2c98f6;
+}
+header .title li {
+  font-size: 3em;
+  padding: 10px 0;
+  float: left;
+  font-family: 'Lobster';
+}
+header .title li:hover {
+  color: white;
+}
+header .headerList {
+  float: right;
+  padding: 0;
+}
+header .headerList li {
+  display: inline-block;
+  padding: 30px 20px;
+  text-shadow: none;
+}
+header .headerList li:hover {
+  background: #2c98f6;
+  color: white;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
+}
+header.headerColored {
+  background: #2c98f6;
+}
+header.headerColored * {
+  color: white;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
+}
+header.headerColored .headerList li:hover {
+  background: white;
+  color: #2c98f6;
+  text-shadow: none;
+}
+header .navButton {
+  float: right;
+  display: none;
+  margin-top: 20px;
+  font-size: 2em;
+  padding-right: 10px;
+  cursor: pointer;
+}
 
 .nav-up {
-  top: -100px; }
+  top: -100px;
+}
 
 #jumbo {
   color: white;
@@ -82,206 +99,257 @@ header {
   position: relative;
   text-align: center;
   transition: all 0.3s ease;
-	background-image: url('../desk-sm.jpg'); }
-  #jumbo .jumboContentContainer {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    left: 5%;
-    right: 5%; }
-    #jumbo .jumboContentContainer h1 {
-      position: relative;
-      font-size: 5em;
-      width: 100%;
-      height: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
-      transition: all 0.3s ease; }
-    #jumbo .jumboContentContainer a {
-      position: relative;
-      top: 80px;
-      text-transform: uppercase;
-      color: white;
-      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
-      padding: 15px 32px;
-      border: 1px solid #2c98f6;
-      border-bottom: 4px solid #2c98f6;
-      border-radius: 50px;
-      transition: all 0.3s ease;
-      font-size: 1em;
-      transition: all 0.3s ease; }
-      #jumbo .jumboContentContainer a:hover {
-        background: #2c98f6;
-        padding: 15px 64px;
-        color: black;
-        text-shadow: none; }
-  #jumbo .scrollDown {
-    height: 50px;
-    width: 50px;
-    padding: 10px 0;
-    color: white;
-    background: rgba(44, 152, 246, 0.5);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease;
-    filter: scale(0.9); }
-    #jumbo .scrollDown:hover {
-      background: rgba(44, 152, 246, 0.8); }
+  background-image: url('../desk-sm.jpg');
+}
+#jumbo .jumboContentContainer {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 5%;
+  right: 5%;
+}
+#jumbo .jumboContentContainer h1 {
+  position: relative;
+  font-size: 5em;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+#jumbo .jumboContentContainer a {
+  position: relative;
+  top: 80px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+  padding: 15px 32px;
+  border: 1px solid #2c98f6;
+  border-bottom: 4px solid #2c98f6;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+#jumbo .jumboContentContainer a:hover {
+  background: #2c98f6;
+  padding: 15px 64px;
+  color: black;
+  text-shadow: none;
+}
+#jumbo .scrollDown {
+  height: 50px;
+  width: 50px;
+  padding: 10px 0;
+  color: white;
+  background: rgba(44, 152, 246, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  filter: scale(0.9);
+}
+#jumbo .scrollDown:hover {
+  background: rgba(44, 152, 246, 0.8);
+}
 
 .about {
   background: #2c98f6;
   padding: 100px 0;
   text-align: center;
-  transition: all 0.3s ease; }
-  .about img {
-    height: 270px;
-    border-radius: 50%;
-    transition: all 0.3s ease; }
-  .about p {
-    text-align: justify;
-    font-size: 2em;
-    color: white;
-    margin: auto; }
+  transition: all 0.3s ease;
+}
+.about img {
+  height: 270px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.about p {
+  text-align: justify;
+  font-size: 2em;
+  color: white;
+  margin: auto;
+}
 
 .portfolio {
   display: block;
   margin: 0px auto 0;
-  padding: 80px 0; }
-  .portfolio .projTitleRow h1 {
-    color: white;
-    font-size: 6em; }
-  .portfolio .projTitleRow hr {
-    border-color: white; }
-  .portfolio .projectsRow .projContainer {
-    height: 300px;
-    transition: all 0.3s ease;
-    padding: 20px; }
-    .portfolio .projectsRow .projContainer div {
-      height: 100%;
-      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
-      border-radius: 4px; }
-      .portfolio .projectsRow .projContainer div a {
-        text-align: center;
-        display: block;
-        height: 100%;
-        width: 100%;
-        font-size: 3.5em;
-        padding-top: 20%;
-        color: transparent;
-        transition: all 0.3s ease;
-        border-radius: 4px; }
-        .portfolio .projectsRow .projContainer div a:active, .portfolio .projectsRow .projContainer div a:hover, .portfolio .projectsRow .projContainer div a:focus {
-          color: white;
-          background: rgba(44, 152, 246, 0.8);
-          text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); }
-    .portfolio .projectsRow .projContainer .projActive {
-      background-size: 142% !important; }
+  padding: 80px 0;
+}
+.portfolio .projTitleRow h1 {
+  color: white;
+  font-size: 6em;
+}
+.portfolio .projTitleRow hr {
+  border-color: white;
+}
+.portfolio .projectsRow .projContainer {
+  height: 300px;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+.portfolio .projectsRow .projContainer div {
+  height: 100%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.portfolio .projectsRow .projContainer div a {
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 3.5em;
+  padding-top: 20%;
+  color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+.portfolio .projectsRow .projContainer div a:active,
+.portfolio .projectsRow .projContainer div a:hover,
+.portfolio .projectsRow .projContainer div a:focus {
+  color: white;
+  background: rgba(44, 152, 246, 0.8);
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.portfolio .projectsRow .projContainer .projActive {
+  background-size: 142% !important;
+}
 
 .contact {
   background: white;
-  color: #2A3A3F;
+  color: #2a3a3f;
   text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 40px 0;
-  font-size: 1em; }
-  .contact #email,
-  .contact #name,
-  .contact #message,
-  .contact button {
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    width: 100%;
-    padding: 15px; }
-    .contact #email:active, .contact #email:focus,
-    .contact #name:active,
-    .contact #name:focus,
-    .contact #message:active,
-    .contact #message:focus,
-    .contact button:active,
-    .contact button:focus {
-      border: 2px solid rgba(44, 152, 246, 0.8);
-      outline: none;
-      box-shadow: none; }
-  .contact #email,
-  .contact #name,
-  .contact #message {
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    margin: 14px 0; }
-  .contact #message {
-    resize: none; }
-  .contact button {
-    margin-top: 10px;
-    background: #2A3A3F;
-    color: white; }
+  font-size: 1em;
+}
+.contact #email,
+.contact #name,
+.contact #message,
+.contact button {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+}
+.contact #email:active,
+.contact #email:focus,
+.contact #name:active,
+.contact #name:focus,
+.contact #message:active,
+.contact #message:focus,
+.contact button:active,
+.contact button:focus {
+  border: 2px solid rgba(44, 152, 246, 0.8);
+  outline: none;
+  box-shadow: none;
+}
+.contact #email,
+.contact #name,
+.contact #message {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  margin: 14px 0;
+}
+.contact #message {
+  resize: none;
+}
+.contact button {
+  margin-top: 10px;
+  background: #2a3a3f;
+  color: white;
+}
 
 .footer {
   text-align: center;
   padding: 80px 0 50px;
   background: #2c98f6;
-  color: #2A3A3F; }
-  .footer .socialIcons {
-    position: relative;
-    margin-top: 10px; }
-    .footer .socialIcons a {
-      padding: 0 5px;
-      position: relative; }
-    .footer .socialIcons i {
-      position: relative;
-      top: 5px; }
-    .footer .socialIcons img {
-      height: 30px;
-      color: black;
-      filter: brightness(0); }
-      .footer .socialIcons img:hover {
-        filter: brightness(0.1); }
+  color: #2a3a3f;
+}
+.footer .socialIcons {
+  position: relative;
+  margin-top: 10px;
+}
+.footer .socialIcons a {
+  padding: 0 5px;
+  position: relative;
+}
+.footer .socialIcons i {
+  position: relative;
+  top: 5px;
+}
+.footer .socialIcons img {
+  height: 30px;
+  color: black;
+  filter: brightness(0);
+}
+.footer .socialIcons img:hover {
+  filter: brightness(0.1);
+}
 
 @media screen and (max-width: 768px) {
   header .navButton {
-    display: inline-block; }
+    display: inline-block;
+  }
   header .headerList li {
     display: none;
     padding: 10px;
-    width: 100%; }
+    width: 100%;
+  }
   header .headerList.active {
-    float: inherit; }
-    header .headerList.active li {
-      display: block;
-      float: left;
-      clear: both; }
+    float: inherit;
+  }
+  header .headerList.active li {
+    display: block;
+    float: left;
+    clear: both;
+  }
   .portfolio .projTitleRow h1 {
-    font-size: 3em; }
+    font-size: 3em;
+  }
   .portfolio .projectsRow .projContainer {
     padding: 0px;
-    height: 400px; }
-    .portfolio .projectsRow .projContainer div {
-      border-radius: 0px; }
-      .portfolio .projectsRow .projContainer div a {
-        font-size: 4em;
-        border-radius: 0px; }
+    height: 400px;
+    margin: 20px;
+  }
+  .portfolio .projectsRow .projContainer div {
+    border-radius: 0px;
+  }
+  .portfolio .projectsRow .projContainer div a {
+    font-size: 4em;
+    border-radius: 0px;
+  }
   .about {
-    padding: 60px 0; }
-    .about img {
-      margin-bottom: 40px;
-      height: 170px; }
-    .about p {
-      font-size: 1em; }
+    padding: 60px 0;
+  }
+  .about img {
+    margin-bottom: 40px;
+    height: 170px;
+  }
+  .about p {
+    font-size: 1em;
+  }
   #contact form div {
-    padding: 0; } }
+    padding: 0;
+  }
+}
 
 @media screen and (max-width: 500px) {
-	#jumbo {
-		background-position: right;
-	}
+  #jumbo {
+    background-position: right;
+  }
   #jumbo .jumboContentContainer h1 {
-    font-size: 2em; }
+    font-size: 2em;
+  }
   #jumbo .jumboContentContainer a {
-    font-size: .8em; }
+    font-size: 0.8em;
+  }
   #jumbo .scrollDown {
     height: 40px;
     width: 40px;
-    padding: 5px 0; } }
+    padding: 5px 0;
+  }
+}
